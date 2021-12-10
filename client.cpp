@@ -624,9 +624,6 @@ int main()
     hints.ai_family = AF_UNSPEC;
     hints.ai_socktype = SOCK_STREAM;
 
-    //193.161.193.99
-    //45035
-
     if (getaddrinfo("127.0.0.1", "3500", &hints, &server_info))
     {
         Write(L"getaddrinfo failed!\n");
